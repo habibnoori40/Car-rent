@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Renter</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css?v=20" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+      integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md py-4">
+      <div class="container gap-3">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/car-icons/car-rent-2.png" alt="Logo" width="80" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end text-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active fw-bold">
+              <a class="nav-link px-3" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item active fw-bold">
+              <a class="nav-link px-3" href="./about.html">About us</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link px-3" href="./cars.html">Cars</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link px-3" href="#">Services</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a class="nav-link px-3" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <a class="margin-l bg-dark btn text-white fw-bold" href="#"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="hero-section banner d-flex align-items-center">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <img
+                style="width: 115px; height: 37px; object-fit: cover"
+                src="assets/animated-cars/animation_car_small.gif"
+                alt="animated car"
+              />
+              <h1 class="fw-bolder text-dark">
+                Explore our premium car rental services and drive in style.
+              </h1>
+              <div class="mt-3">
+                <h3>Why Us?</h3>
+                <p>
+                  At Car Renter, we stand out as your premier option for car
+                  rentals. With a commitment to exceptional service and a fleet
+                  of top-notch vehicles, we provide an unmatched experience for
+                  every journey.
+                </p>
+              </div>
+              <div class="btns">
+                <a
+                  class="btn hover-bg bg-dark text-white fw-bold px-4 me-2"
+                  href="#"
+                  ><i class="fa-solid fa-user"></i>&nbsp; Sign In</a
+                >
+                <a
+                  class="btn hover-bg orange-bg text-white fw-bold px-4"
+                  href="#"
+                  ><i class="fa-solid fa-lock"></i> &nbsp; Sign Up</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <img src="assets/cars/car.png" alt="Car" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="container">
+          <div class="form-c-inner bg-white w-75 mx-auto">
+            <form class="row align-items-end justify-content-center gap-y">
+              <div class="col-md-6">
+                <label class="fw-bold text-dark mb-2" for="search"
+                  >Search Car</label
+                >
+                <input
+                  type="text"
+                  class="form-control py-3"
+                  id="search"
+                  placeholder="Toyota Camry SE 350 2019"
+                />
+              </div>
+              <button
+                class="text-white col-lg-2 col-md-4 col-sm-5 py-3 fw-bold"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="brands text-center">
+        <h2 class="fw-bold text-dark fs-1 mb-5 text-center">
+          Choose your brand!
+        </h2>
+        <div class="d-flex justify-content-center brands-animate">
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img src="./assets/brands/bmw.png" alt="bmw" class="brand-icon" />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(177)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/classic.png"
+                alt="classic"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(55)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/fiat.png"
+                alt="fiat"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(77)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img src="./assets/brands/gmc.png" alt="gmc" class="brand-icon" />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(19)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/jeep.png"
+                alt="jeep"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(11)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/land.png"
+                alt="land"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(122)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/opel.png"
+                alt="opel"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(222)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/proton.png"
+                alt="proton"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(88)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img src="./assets/brands/bmw.png" alt="bmw" class="brand-icon" />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(177)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/classic.png"
+                alt="classic"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(55)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/fiat.png"
+                alt="fiat"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(77)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img src="./assets/brands/gmc.png" alt="gmc" class="brand-icon" />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(19)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/jeep.png"
+                alt="jeep"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(11)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/land.png"
+                alt="land"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(122)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/opel.png"
+                alt="opel"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(222)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/proton.png"
+                alt="proton"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(88)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img src="./assets/brands/bmw.png" alt="bmw" class="brand-icon" />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(177)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/classic.png"
+                alt="classic"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(55)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/fiat.png"
+                alt="fiat"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(77)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img src="./assets/brands/gmc.png" alt="gmc" class="brand-icon" />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(19)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/jeep.png"
+                alt="jeep"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(11)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/land.png"
+                alt="land"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(122)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/opel.png"
+                alt="opel"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(222)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/proton.png"
+                alt="proton"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(88)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img src="./assets/brands/bmw.png" alt="bmw" class="brand-icon" />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(177)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/classic.png"
+                alt="classic"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(55)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/fiat.png"
+                alt="fiat"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(77)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img src="./assets/brands/gmc.png" alt="gmc" class="brand-icon" />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(19)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/jeep.png"
+                alt="jeep"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(11)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/land.png"
+                alt="land"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(122)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/opel.png"
+                alt="opel"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(222)</span
+            >
+          </div>
+          <div class="brand-item">
+            <a href="#" class="brand-link d-block text-dark">
+              <img
+                src="./assets/brands/proton.png"
+                alt="proton"
+                class="brand-icon"
+              />
+            </a>
+            <span class="available-cars d-block text-center mt-1 fs-5"
+              >(88)</span
+            >
+          </div>
+        </div>
+        <button class="btn bg-dark text-white fw-bold px-5 mt-5">
+          View More
+        </button>
+      </section>
+      <section class="how-it-works gray-sec text-center py-5 mt-5">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="fw-bolder fs-1">How It Works</h2>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text<br />
+              ever since the 1500s,
+            </p>
+          </div>
+          <div class="row mt-5 justify-content-center">
+            <div class="col-lg-4 col-md-4">
+              <div class="icon">
+                <img
+                  class="bg-dark border-50"
+                  src="./assets/lease-94.png"
+                  alt="keys"
+                />
+              </div>
+              <div class="content mt-4">
+                <h3 class="fw-bold">1. Choose Locations</h3>
+                <p class="font-15">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="icon">
+                <img
+                  class="bg-dark border-50"
+                  src="./assets/lease-94.png"
+                  alt="keys"
+                />
+              </div>
+              <div class="content mt-4">
+                <h3 class="fw-bold">2. Pick-Up Locations</h3>
+                <p class="font-15">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="icon">
+                <img
+                  class="bg-dark border-50"
+                  src="./assets/lease-94.png"
+                  alt="keys"
+                />
+              </div>
+              <div class="content mt-4">
+                <h3 class="fw-bold">3. Choose Brand</h3>
+                <p class="font-15">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="icon">
+                <img
+                  class="bg-dark border-50"
+                  src="./assets/lease-94.png"
+                  alt="keys"
+                />
+              </div>
+              <div class="content mt-4">
+                <h3 class="fw-bold">4. Choose Car Model</h3>
+                <p class="font-15">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="icon">
+                <img
+                  class="bg-dark border-50"
+                  src="./assets/lease-94.png"
+                  alt="keys"
+                />
+              </div>
+              <div class="content mt-4">
+                <h3 class="fw-bold">5. Book your Car</h3>
+                <p class="font-15">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="icon">
+                <img
+                  class="bg-dark border-50"
+                  src="./assets/lease-94.png"
+                  alt="keys"
+                />
+              </div>
+              <div class="content mt-4">
+                <h3 class="fw-bold">6. Finally Enjoy</h3>
+                <p class="font-15">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s,
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="areas py-5">
+        <div class="container">
+          <div class="section-heading">
+            <h2 class="fw-bolder fs-1 text-center">
+              Areas we are available in
+            </h2>
+          </div>
+          <div
+            class="row justify-content-center justify-content-sm-between mt-5 gap-4 gap-lg-0"
+          >
+            <div class="col-lg-2 col-sm-3 col-4">
+              <h3 class="fs-5">
+                <a href="#" class="text-dark rounded-2 hover-clr-orange"
+                  >Dubai</a
+                >
+              </h3>
+              <ul class="font-14 ps-2 m-0 mt-2">
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Jumeirah</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Deira</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Bur Dubai</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Barsha</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Al Satwa</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Qusais</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Rashidiya</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-4">
+              <h3 class="fs-5">
+                <a href="#" class="text-dark rounded-2 hover-clr-orange"
+                  >Abu Dhabi</a
+                >
+              </h3>
+              <ul class="font-14 ps-2 m-0 mt-2">
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Al Ain</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Madinat Zayed</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Ruwais</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Liwa Oasis</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Dhafra</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Qusais</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Dhafra</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-4">
+              <h3 class="fs-5">
+                <a href="#" class="text-dark rounded-2 hover-clr-orange"
+                  >Al Moalla</a
+                >
+              </h3>
+              <ul class="font-14 ps-2 m-0 mt-2">
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Al Ain</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Madinat Zayed</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Ruwais</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Liwa Oasis</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Dhafra</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Qusais</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Dhafra</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-4">
+              <h3 class="fs-5">
+                <a href="#" class="text-dark rounded-2 hover-clr-orange"
+                  >Dubai</a
+                >
+              </h3>
+              <ul class="font-14 ps-2 m-0 mt-2">
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Jumeirah</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Deira</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Bur Dubai</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Barsha</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Al Satwa</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Qusais</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Rashidiya</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-4">
+              <h3 class="fs-5">
+                <a href="#" class="text-dark rounded-2 hover-clr-orange"
+                  >Al Daheel</a
+                >
+              </h3>
+              <ul class="font-14 ps-2 m-0 mt-2">
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Jumeirah</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Deira</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Bur Dubai</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Barsha</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Al Satwa</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Qusais</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Rashidiya</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-4">
+              <h3 class="fs-5">
+                <a href="#" class="text-dark rounded-2 hover-clr-orange"
+                  >Al Sharjah</a
+                >
+              </h3>
+              <ul class="font-14 ps-2 m-0 mt-2">
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Jumeirah</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Deira</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Bur Dubai</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Barsha</a
+                  >
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange">Al Satwa</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Qusais</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="gray-txt-sec hover-clr-orange"
+                    >Al Rashidiya</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cars" class="cars pt-5 pb-4 gray-bg">
+        <div class="container">
+          <div class="section-heading text-center mb-4">
+            <h2 class="fw-bold fs-1">Most Popular Cars</h2>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text<br />
+              ever since the 1500s,
+            </p>
+          </div>
+          <div class="row">
+            <div
+              data-product="car"
+              class="col-lg-4 col-md-6 col-12 position-relative"
+            >
+              <div class="mb-4 bg-white p-4 shadow-sm rounded-4">
+                <div class="img-holder position-relative">
+                  <p
+                    class="type shadow-sm position-absolute top-0 m-3 py-1 px-4 rounded bg-white"
+                  >
+                    Audi
+                  </p>
+                  <img
+                    src="./assets/cars/car-red.jpg"
+                    class="w-100 rounded"
+                    alt="Audi"
+                  />
+                </div>
+                <div class="heading mt-3 pb-3 border-bottom">
+                  <h3 class="fs-5 fw-bold mb-1">Toyota Camry SE 350</h3>
+                  <div class="reviews">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <span class="text-warning">(5.0)</span>
+                  </div>
+                </div>
+                <div class="mt-3 details">
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gear"></i></span>
+                      <span>&nbsp;Auto</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gauge-high"></i></span>
+                      <span>&nbsp;10KM</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gas-pump"></i></span>
+                      <span>&nbsp;Petrol</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                      <span>&nbsp;1600W</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-calendar"></i></span>
+                      <span>&nbsp;2015</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-person"></i></span>
+                      <span>&nbsp;5 Persons</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="price d-flex align-items-center justify-content-between gray-bg p-2 my-3 rounded"
+                >
+                  <span class="gray-txt"
+                    ><i class="fa-solid fa-location-dot"></i> Germany</span
+                  >
+                  <span
+                    ><span class="fw-bold fs-5 orange-txt">$400</span
+                    ><span class="gray-txt"> / Day</span></span
+                  >
+                </div>
+                <div class="btns d-flex flex-wrap justify-content-between">
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis-49 orange-bg text-white fw-bold py-2"
+                  >
+                    Call us
+                  </a>
+                  <a
+                    data-book="book-now"
+                    class="text-decoration-none text-center rounded flex-basis-49 bg-dark text-white fw-bold py-2"
+                  >
+                    Book Now
+                  </a>
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis mt-2 green-bg text-white fw-bold py-2"
+                  >
+                    Whatsapp
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              data-product="car"
+              class="col-lg-4 col-md-6 col-12 position-relative"
+            >
+              <div class="mb-4 bg-white p-4 shadow-sm rounded-4">
+                <div class="img-holder position-relative">
+                  <p
+                    class="type shadow-sm position-absolute top-0 m-3 py-1 px-4 rounded bg-white"
+                  >
+                    Accura
+                  </p>
+                  <img
+                    src="./assets/cars/car-blue.jpg"
+                    class="w-100 rounded"
+                    alt="Audi"
+                  />
+                </div>
+                <div class="heading mt-3 pb-3 border-bottom">
+                  <h3 class="fs-5 fw-bold mb-1">Acura RDX FWD</h3>
+                  <div class="reviews">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <span class="text-warning">(5.0)</span>
+                  </div>
+                </div>
+                <div class="mt-3 details">
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gear"></i></span>
+                      <span>&nbsp;Auto</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gauge-high"></i></span>
+                      <span>&nbsp;42 Miles</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gas-pump"></i></span>
+                      <span>&nbsp;Petrol</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                      <span>&nbsp;2000W</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-calendar"></i></span>
+                      <span>&nbsp;2021</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-person"></i></span>
+                      <span>&nbsp;5 Persons</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="price d-flex align-items-center justify-content-between gray-bg p-2 my-3 rounded"
+                >
+                  <span class="gray-txt"
+                    ><i class="fa-solid fa-location-dot"></i> Taxes</span
+                  >
+                  <span
+                    ><span class="fw-bold fs-5 orange-txt">$30</span
+                    ><span class="gray-txt"> / Day</span></span
+                  >
+                </div>
+                <div class="btns d-flex flex-wrap justify-content-between">
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis-49 orange-bg text-white fw-bold py-2"
+                  >
+                    Call us
+                  </a>
+                  <a
+                    data-book="book-now"
+                    class="text-decoration-none text-center rounded flex-basis-49 bg-dark text-white fw-bold py-2"
+                  >
+                    Book Now
+                  </a>
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis mt-2 green-bg text-white fw-bold py-2"
+                  >
+                    Whatsapp
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              data-product="car"
+              class="col-lg-4 col-md-6 col-12 position-relative"
+            >
+              <div class="mb-4 bg-white p-4 shadow-sm rounded-4">
+                <div class="img-holder position-relative">
+                  <p
+                    class="type shadow-sm position-absolute top-0 m-3 py-1 px-4 rounded bg-white"
+                  >
+                    Chevrolet
+                  </p>
+                  <img
+                    src="./assets/cars/car-race-red.jpg"
+                    class="w-100 rounded"
+                    alt="Chevrolet"
+                  />
+                </div>
+                <div class="heading mt-3 pb-3 border-bottom">
+                  <h3 class="fs-5 fw-bold mb-1">2018 Chevrolet Camaro</h3>
+                  <div class="reviews">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <span class="text-warning">(5.0)</span>
+                  </div>
+                </div>
+                <div class="mt-3 details">
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gear"></i></span>
+                      <span>&nbsp;Manual</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gauge-high"></i></span>
+                      <span>&nbsp;18KM</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gas-pump"></i></span>
+                      <span>&nbsp;Diesel</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                      <span>&nbsp;2500W</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-calendar"></i></span>
+                      <span>&nbsp;2018</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-person"></i></span>
+                      <span>&nbsp;4 Persons</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="price d-flex align-items-center justify-content-between gray-bg p-2 my-3 rounded"
+                >
+                  <span class="gray-txt"
+                    ><i class="fa-solid fa-location-dot"></i> London</span
+                  >
+                  <span
+                    ><span class="fw-bold fs-5 orange-txt">$100</span
+                    ><span class="gray-txt"> / Day</span></span
+                  >
+                </div>
+                <div class="btns d-flex flex-wrap justify-content-between">
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis-49 orange-bg text-white fw-bold py-2"
+                    >Call us</a
+                  >
+                  <a
+                    data-book="book-now"
+                    class="text-decoration-none text-center rounded flex-basis-49 bg-dark text-white fw-bold py-2"
+                    >Book Now</a
+                  >
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis mt-2 green-bg text-white fw-bold py-2"
+                    >Whatsapp</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              data-product="car"
+              class="col-lg-4 col-md-6 col-12 position-relative"
+            >
+              <div class="mb-4 bg-white p-4 shadow-sm rounded-4">
+                <div class="img-holder position-relative">
+                  <p
+                    class="type shadow-sm position-absolute top-0 m-3 py-1 px-4 rounded bg-white"
+                  >
+                    Chevrolet
+                  </p>
+                  <img
+                    src="./assets/cars/car-truck.jpg"
+                    class="w-100 rounded"
+                    alt="Chevrolet"
+                  />
+                </div>
+                <div class="heading mt-3 pb-3 border-bottom">
+                  <h3 class="fs-5 fw-bold mb-1">Chevrolet Pick Truck 3.5L</h3>
+                  <div class="reviews">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star"></i>
+                    <span class="text-warning">(4.0)</span>
+                  </div>
+                </div>
+                <div class="mt-3 details">
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gear"></i></span>
+                      <span>&nbsp;Manual</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gauge-high"></i></span>
+                      <span>&nbsp;10KM</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gas-pump"></i></span>
+                      <span>&nbsp;Petrol</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                      <span>&nbsp;1500W</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-calendar"></i></span>
+                      <span>&nbsp;2012</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-person"></i></span>
+                      <span>&nbsp;5 Persons</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="price d-flex align-items-center justify-content-between gray-bg p-2 my-3 rounded"
+                >
+                  <span class="gray-txt"
+                    ><i class="fa-solid fa-location-dot"></i> London</span
+                  >
+                  <span
+                    ><span class="fw-bold fs-5 orange-txt">$77</span
+                    ><span class="gray-txt"> / Day</span></span
+                  >
+                </div>
+                <div class="btns d-flex flex-wrap justify-content-between">
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis-49 orange-bg text-white fw-bold py-2"
+                    >Call us</a
+                  >
+                  <a
+                    data-book="book-now"
+                    class="text-decoration-none text-center rounded flex-basis-49 bg-dark text-white fw-bold py-2"
+                    >Book Now</a
+                  >
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis mt-2 green-bg text-white fw-bold py-2"
+                    >Whatsapp</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              data-product="car"
+              class="col-lg-4 col-md-6 col-12 position-relative"
+            >
+              <div class="mb-4 bg-white p-4 shadow-sm rounded-4">
+                <div class="img-holder position-relative">
+                  <p
+                    class="type shadow-sm position-absolute top-0 m-3 py-1 px-4 rounded bg-white"
+                  >
+                    Land Rover
+                  </p>
+                  <img
+                    src="./assets/cars/car-blue-2.jpg"
+                    class="w-100 rounded"
+                    alt="Land rover"
+                  />
+                </div>
+                <div class="heading mt-3 pb-3 border-bottom">
+                  <h3 class="fs-5 fw-bold mb-1">Land rover open sky L33</h3>
+                  <div class="reviews">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <span class="text-warning">(4.0)</span>
+                  </div>
+                </div>
+                <div class="mt-3 details">
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gear"></i></span>
+                      <span>&nbsp;Auto</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gauge-high"></i></span>
+                      <span>&nbsp;14KM</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gas-pump"></i></span>
+                      <span>&nbsp;Petrol</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                      <span>&nbsp;1800W</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-calendar"></i></span>
+                      <span>&nbsp;2016</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-person"></i></span>
+                      <span>&nbsp;4 Persons</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="price d-flex align-items-center justify-content-between gray-bg p-2 my-3 rounded"
+                >
+                  <span class="gray-txt"
+                    ><i class="fa-solid fa-location-dot"></i> London</span
+                  >
+                  <span
+                    ><span class="fw-bold fs-5 orange-txt">$55</span
+                    ><span class="gray-txt"> / Day</span></span
+                  >
+                </div>
+                <div class="btns d-flex flex-wrap justify-content-between">
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis-49 orange-bg text-white fw-bold py-2"
+                    >Call us</a
+                  >
+                  <a
+                    data-book="book-now"
+                    class="text-decoration-none text-center rounded flex-basis-49 bg-dark text-white fw-bold py-2"
+                    >Book Now</a
+                  >
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis mt-2 green-bg text-white fw-bold py-2"
+                    >Whatsapp</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              data-product="car"
+              class="col-lg-4 col-md-6 col-12 position-relative"
+            >
+              <div class="mb-4 bg-white p-4 shadow-sm rounded-4">
+                <div class="img-holder position-relative">
+                  <p
+                    class="type shadow-sm position-absolute top-0 m-3 py-1 px-4 rounded bg-white"
+                  >
+                    Toyota
+                  </p>
+                  <img
+                    src="./assets/cars/car-white.jpg"
+                    class="w-100 rounded"
+                    alt="Toyota"
+                  />
+                </div>
+                <div class="heading mt-3 pb-3 border-bottom">
+                  <h3 class="fs-5 fw-bold mb-1">Toyota Soul 2016</h3>
+                  <div class="reviews">
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <span class="text-warning">(5.0)</span>
+                  </div>
+                </div>
+                <div class="mt-3 details">
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gear"></i></span>
+                      <span>&nbsp;Auto</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gauge-high"></i></span>
+                      <span>&nbsp;14KM</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-gas-pump"></i></span>
+                      <span>&nbsp;Petrol</span>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-bolt"></i></span>
+                      <span>&nbsp;1800W</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-calendar"></i></span>
+                      <span>&nbsp;2016</span>
+                    </div>
+                    <div class="gray-txt font-15 font-14-sm flex-basis detail">
+                      <span><i class="fa-solid fa-person"></i></span>
+                      <span>&nbsp;4 Persons</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="price d-flex align-items-center justify-content-between gray-bg p-2 my-3 rounded"
+                >
+                  <span class="gray-txt"
+                    ><i class="fa-solid fa-location-dot"></i> africa</span
+                  >
+                  <span
+                    ><span class="fw-bold fs-5 orange-txt">$25</span
+                    ><span class="gray-txt"> / Day</span></span
+                  >
+                </div>
+                <div class="btns d-flex flex-wrap justify-content-between">
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis-49 orange-bg text-white fw-bold py-2"
+                    >Call us</a
+                  >
+                  <a
+                    data-book="now"
+                    class="text-decoration-none text-center rounded flex-basis-49 bg-dark text-white fw-bold py-2"
+                    >Book Now</a
+                  >
+                  <a
+                    class="text-decoration-none text-center rounded flex-basis mt-2 green-bg text-white fw-bold py-2"
+                    >Whatsapp</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cartypes text-center py-5">
+        <div class="container">
+          <div class="heading">
+            <h2 class="fw-bold fs-1">Most Popular Cartypes</h2>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text<br />
+              ever since the 1500s,
+            </p>
+          </div>
+          <div class="cartypes-inner row mt-5 gap-y">
+            <div class="cartype col-lg-3 col-md-6 col-6">
+              <div class="bg-light pb-3 rounded-4 shadow-sm hover">
+                <div class="img">
+                  <img
+                    class="w-100"
+                    src="./assets/car-icons/cross-over.webp"
+                    alt="crossover"
+                  />
+                </div>
+                <div class="info mt-3">
+                  <h4 class="m-0">Crossover</h4>
+                  <p>45 Cars</p>
+                </div>
+              </div>
+            </div>
+            <div class="cartype col-lg-3 col-md-6 col-6">
+              <div class="bg-light pb-3 rounded-4 shadow-sm hover">
+                <div class="img">
+                  <img
+                    class="w-100"
+                    src="./assets/car-icons/Convertible.webp"
+                    alt="Convertible"
+                  />
+                </div>
+                <div class="info mt-3">
+                  <h4 class="m-0">Convertible</h4>
+                  <p>88 Cars</p>
+                </div>
+              </div>
+            </div>
+            <div class="cartype col-lg-3 col-md-6 col-6">
+              <div class="bg-light pb-3 rounded-4 shadow-sm hover">
+                <div class="img">
+                  <img
+                    class="w-100"
+                    src="./assets/car-icons/sedan.webp"
+                    alt="sedan"
+                  />
+                </div>
+                <div class="info mt-3">
+                  <h4 class="m-0">Sedan</h4>
+                  <p>122 Cars</p>
+                </div>
+              </div>
+            </div>
+            <div class="cartype col-lg-3 col-md-6 col-6">
+              <div class="bg-light pb-3 rounded-4 shadow-sm hover">
+                <div class="img">
+                  <img
+                    class="w-100"
+                    src="./assets/car-icons/suv.webp"
+                    alt="suv"
+                  />
+                </div>
+                <div class="info mt-3">
+                  <h4 class="m-0">Suv</h4>
+                  <p>222 Cars</p>
+                </div>
+              </div>
+            </div>
+            <div class="cartype col-lg-3 col-md-6 col-6">
+              <div class="bg-light pb-3 rounded-4 shadow-sm hover">
+                <div class="img">
+                  <img
+                    class="w-100"
+                    src="./assets/car-icons/sports.webp"
+                    alt="sports"
+                  />
+                </div>
+                <div class="info mt-3">
+                  <h4 class="m-0">Sports</h4>
+                  <p>33 Cars</p>
+                </div>
+              </div>
+            </div>
+            <div class="cartype col-lg-3 col-md-6 col-6">
+              <div class="bg-light pb-3 rounded-4 shadow-sm hover">
+                <div class="img">
+                  <img
+                    class="w-100"
+                    src="./assets/car-icons/luxury.webp"
+                    alt="luxury"
+                  />
+                </div>
+                <div class="info mt-3">
+                  <h4 class="m-0">Luxury</h4>
+                  <p>99 Cars</p>
+                </div>
+              </div>
+            </div>
+            <div class="cartype col-lg-3 col-md-6 col-6">
+              <div class="bg-light pb-3 rounded-4 shadow-sm hover">
+                <div class="img">
+                  <img
+                    class="w-100"
+                    src="./assets/car-icons/van.webp"
+                    alt="van"
+                  />
+                </div>
+                <div class="info mt-3">
+                  <h4 class="m-0">Van</h4>
+                  <p>9 Cars</p>
+                </div>
+              </div>
+            </div>
+            <div class="cartype col-lg-3 col-md-6 col-6">
+              <div class="bg-light pb-3 rounded-4 shadow-sm hover">
+                <div class="img">
+                  <img
+                    class="w-100"
+                    src="./assets/car-icons/Muscle.webp"
+                    alt="Muscle"
+                  />
+                </div>
+                <div class="info mt-3">
+                  <h4 class="m-0">Muscle</h4>
+                  <p>5 Cars</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn bg-dark text-white fw-bold mt-5 px-5">
+            View More!
+          </button>
+        </div>
+      </section>
+      <section class="facts bg-dark text-white py-5">
+        <div class="container">
+          <div class="heading text-center">
+            <h2 class="fs-1 fw-bold">Facts By Numbers</h2>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text<br />
+              ever since the 1500s,
+            </p>
+          </div>
+          <div class="fact-numbers row gap-y mt-5">
+            <div class="col-sm-6 col-lg-3">
+              <div
+                class="bg-white p-3 d-flex gap-4 align-items-center rounded-3"
+              >
+                <div class="img bg-dark p-3 rounded-3">
+                  <img src="./assets/heart.svg" alt="heart" />
+                </div>
+                <div class="text-dark">
+                  <h4 class="m-0">10K</h4>
+                  <p class="m-0 gray-txt">Happy Customers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div
+                class="bg-white p-3 d-flex gap-4 align-items-center rounded-3"
+              >
+                <div class="img bg-dark p-3 rounded-3">
+                  <img src="./assets/car.svg" alt="car" />
+                </div>
+                <div class="text-dark">
+                  <h4 class="m-0">162K+</h4>
+                  <p class="m-0 gray-txt">Count of Cars</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div
+                class="bg-white p-3 d-flex gap-4 align-items-center rounded-3"
+              >
+                <div class="img bg-dark p-3 rounded-3">
+                  <img src="./assets/headphone.svg" alt="car" />
+                </div>
+                <div class="text-dark">
+                  <h4 class="m-0">34K+</h4>
+                  <p class="m-0 gray-txt">Car Center Solutions</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div
+                class="bg-white p-3 d-flex gap-4 align-items-center rounded-3"
+              >
+                <div class="img bg-dark p-3 rounded-3">
+                  <img src="./assets/history.svg" alt="history" />
+                </div>
+                <div class="text-dark">
+                  <h4 class="m-0">11K+</h4>
+                  <p class="m-0 gray-txt">Total Kilometer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial py-5 gray-sec">
+        <div class="container">
+          <div class="heading text-center">
+            <h2 class="fs-1 fw-bold">What People say about us?</h2>
+            <p>
+              Lorem Ipsum has been the industry's standard dummy text<br />
+              ever since the 1500s,
+            </p>
+          </div>
+          <div class="glide testimonial-carousel">
+            <div class="glide__track mt-5" data-glide-el="track">
+              <div class="glide__slides">
+                <div
+                  class="glide__slide bg-dark text-white p-4 rounded-4 shadow-sm"
+                >
+                  <div class="qoute"></div>
+                  <div class="profile d-flex align-items-center gap-4 mb-3">
+                    <div class="img person-img border-50">
+                      <img
+                        class="w-100 border-50"
+                        src="./assets/avatar-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="name-rev">
+                      <h5 class="mb-1">Abdulrehman</h5>
+                      <div class="rating">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <span class="gray-txt">(5.0)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="m-0 fw-light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div
+                  class="glide__slide bg-dark text-white p-4 rounded-4 shadow-sm"
+                >
+                  <div class="qoute"></div>
+                  <div class="profile d-flex align-items-center gap-4 mb-3">
+                    <div class="img person-img border-50">
+                      <img
+                        class="w-100 border-50"
+                        src="./assets/avatar-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="name-rev">
+                      <h5 class="mb-1">Habib Noori</h5>
+                      <div class="rating">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <span class="gray-txt">(5.0)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="fw-light m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div
+                  class="glide__slide bg-dark text-white p-4 rounded-4 shadow-sm"
+                >
+                  <div class="qoute"></div>
+                  <div class="profile d-flex align-items-center gap-4 mb-3">
+                    <div class="img person-img border-50">
+                      <img
+                        class="w-100 border-50"
+                        src="./assets/avatar-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="name-rev">
+                      <h5 class="mb-1">Habib Noori</h5>
+                      <div class="rating">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <span class="gray-txt">(5.0)</span>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="fw-light m-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="glide__bullets d-flex justify-content-center gap-2 bullets mt-5"
+              data-glide-el="controls[nav]"
+            >
+              <div
+                class="bullet glide__bullet cursor-pointer border-50"
+                data-glide-dir="=0"
+              ></div>
+              <div
+                class="bullet glide__bullet cursor-pointer border-50"
+                data-glide-dir="=1"
+              ></div>
+              <div
+                class="bullet glide__bullet cursor-pointer border-50"
+                data-glide-dir="=2"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer bg-dark text-white pt-5">
+        <div class="container" style="z-index: 10; position: relative">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="footer-widget footer-menu">
+                    <h5 class="footer-title mb-4">About Company</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Our Company</a>
+                      </li>
+                      <li>
+                        <a href="#">Shop Toyota</a>
+                      </li>
+                      <li>
+                        <a href="#">Dreamsrentals USA</a>
+                      </li>
+                      <li>
+                        <a href="#">Dreamsrentals Worldwide</a>
+                      </li>
+                      <li>
+                        <a href="#">Dreamsrentals Racing</a>
+                      </li>
+                      <li>
+                        <a href="#">Dreamsrentals Racing</a>
+                      </li>
+                      <li>
+                        <a href="#">Virtual Auto Show</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="footer-widget footer-menu">
+                    <h5 class="footer-title mb-4">Vehicles Type</h5>
+                    <ul>
+                      <li>
+                        <a href="#">All Vehicles</a>
+                      </li>
+                      <li>
+                        <a href="#">SUVs</a>
+                      </li>
+                      <li>
+                        <a href="#">Trucks</a>
+                      </li>
+                      <li>
+                        <a href="#">Cars</a>
+                      </li>
+                      <li>
+                        <a href="#">Crossovers</a>
+                      </li>
+                      <li>
+                        <a href="#">Electrified Vehicles</a>
+                      </li>
+                      <li>
+                        <a href="#">Hybrids</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                  <div class="footer-widget footer-menu">
+                    <h5 class="footer-title mb-4">Quick links</h5>
+                    <ul>
+                      <li>
+                        <a href="#">My Account</a>
+                      </li>
+                      <li>
+                        <a href="#">Champaigns</a>
+                      </li>
+                      <li>
+                        <a href="#">Dreamsrental Dealers</a>
+                      </li>
+                      <li>
+                        <a href="#">Deals and Incentive</a>
+                      </li>
+                      <li>
+                        <a href="#">Financial Services</a>
+                      </li>
+                      <li>
+                        <a href="#">Dreamsrental Insurance</a>
+                      </li>
+                      <li>
+                        <a href="#">Dreamsrental Care</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="footer-contact footer-widget">
+                <h5 class="footer-title mb-4">Contact Info</h5>
+                <div class="footer-contact-info">
+                  <div class="footer-address d-flex align-items-center gap-3">
+                    <span class="py-2 px-3 orange-bg fs-5 rounded-2"
+                      ><i class="fa-solid fa-phone-volume"></i
+                    ></span>
+                    <div class="addr-info">
+                      <a class="text-white fw-bold" href="tel:+1(888)7601940"
+                        >+ 1 (888) 760 1940</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="footer-address d-flex align-items-center gap-3 my-4"
+                  >
+                    <span class="py-2 px-3 orange-bg fs-5 rounded-2"
+                      ><i class="fa-solid fa-envelope"></i
+                    ></span>
+                    <div class="addr-info">
+                      <a
+                        class="text-white fw-bold"
+                        href="mailto:support@example.com"
+                        >support@example.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="footer-social-widget">
+                  <h6 class="text-white fw-bold mb-3">Connect with us</h6>
+                  <ul class="nav-social d-flex gap-2">
+                    <li class="bg-primary">
+                      <a href="#" target="_blank"
+                        ><i
+                          class="fa-brands fa-facebook-f fa-facebook fi-icon"
+                        ></i
+                      ></a>
+                    </li>
+                    <li class="bg-danger">
+                      <a href="#" target="_blank"
+                        ><i class="fab fa-instagram fi-icon"></i
+                      ></a>
+                    </li>
+                    <li class="bg-success">
+                      <a href="#" target="_blank"
+                        ><i class="fab fa-behance fi-icon"></i
+                      ></a>
+                    </li>
+                    <li class="bg-info">
+                      <a href="#" target="_blank"
+                        ><i class="fab fa-twitter fi-icon"></i>
+                      </a>
+                    </li>
+                    <li class="bg-primary">
+                      <a href="#" target="_blank"
+                        ><i class="fab fa-linkedin fi-icon"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright pt-5">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="copyright-text">
+                  <p>© 2023 Dreams Rent. All Rights Reserved.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="copyright-menu">
+                  <div class="vistors-details">
+                    <ul class="d-flex gap-3 justify-content-md-end">
+                      <li class="bg-white py-1 px-2 rounded-2">
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="./assets/paypal.svg"
+                            alt="Paypal"
+                        /></a>
+                      </li>
+                      <li class="bg-white py- px-2 rounded-2">
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="./assets/visa.svg"
+                            alt="Visa"
+                        /></a>
+                      </li>
+                      <li class="bg-white py- px-2 rounded-2">
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="./assets/master.svg"
+                            alt="Master"
+                        /></a>
+                      </li>
+                      <li class="bg-white py- px-2 rounded-2">
+                        <a href="javascript:void(0)"
+                          ><img
+                            class="img-fluid"
+                            src="./assets/applegpay.svg"
+                            alt="applegpay"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+      integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="scripts/bootstrap.bundle.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="./scripts/app.js?v=20" type="module"></script>
+  </body>
+</html>
